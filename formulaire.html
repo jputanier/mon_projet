@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ma 1ère page</title>
+    <link rel="stylesheet" type="text/css" href="./css/planetes.css">
+</head>
+
+<body>
+    <header>
+
+        <h1>Menu</h1>
+        <nav>
+            <ul class="flex">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./formulaire.html">Lien du formulaire</a></li>
+                <li><a href="./tableau.html">Tableau</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="recensement">Recensement Galactique</h1>
+        <img src="./img/terre.jpg" />
+        <figure>Voici notre Planète Terre</figure>
+
+        <div id="mon_formulaire">
+            <form method="post" action="./validation.html">
+                <p><input type="text" name="nom" id="nom">
+                <label for="nom">Nom</label></p>
+                <p><input type="text" name="prenom" id="prenom">
+                <label for="prenom">Prenom</label></p>
+                <p><input type="mail" name="mail" id="mail">
+                <label for="mail">Mail</label></p>
+                <p><input type="number" name="age" id="age" min="0" required>
+                <label for="age">Age</label></p>
+                <p><input type="text" name="login" id="login">
+                <label for="login">Identifiant</label></p>
+                <p><input type="password" name="mdp" id="mdp">
+                <label for="mdp">Mot de passe</label></p>
+
+                <p><label for="planetes">Sur quelle planète habites-tu ?</label>
+                <p><select name="planetes" id="planetes">
+                    <optgroup label="Système solaire">
+                        <option selected="yes" value="mercure">Mercure</option>
+                        <option value="venus">Venus</option>
+                        <option value="terre">Terre</option>
+                        <option value="mars">Mars</option>
+                        <option value="jupiter">Jupiter</option>
+                        <option value="saturne">Saturne</option>
+                        <option value="uranus">Uranus</option>
+                        <option value="neptune">Neptune</option>
+                        <option value="pluton">Pluton</option>
+                    </optgroup>
+                    <optgroup label="Loin, très loin...">
+                        <option value="tatooine">Tatooine</option>
+                        <option value="coruscant">Coruscant</option>
+                        <option value="alderaan">Alderaan</option>
+                        <option value="dagobah">Dagobah</option>
+                        <option value="hoth">Hoth</option>
+                    </optgroup>
+                </select></p>
+
+                <p>Dans quelle galaxie vivons-nous ?</p>
+                <p><input type="radio" name="galaxie" value="andromede" id="andromede"><label for="andromede">Andromède</label></p>
+                <p><input type="radio" name="galaxie" value="voielactee" id="voielactee"><label for="voielactee">Voie lactée</label></p>
+                <p><input type="radio" name="galaxie" value="centaure" id="centaure"><label for="centaure">Centaure</label></p>
+                <p><input type="radio" name="galaxie" value="magellan" id="magellan"><label for="magellan">Magellan</label></p>
+                <div id="submit_button"><input type="submit" value="Valider" id="bouton_submit"></div>
+            </form>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./formulaire.html">Haut de Page</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>
